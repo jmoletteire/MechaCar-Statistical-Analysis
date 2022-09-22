@@ -1,3 +1,4 @@
+##### Deliverable 1 #####
 # Load dplyr package
 library(dplyr)
 
@@ -9,3 +10,14 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 
 # Retrieve summary statistics
 summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg, mecha_mpg))
+
+
+##### Deliverable 2 #####
+# Read Suspension_Coil.csv
+sus_coil <- read.csv('Suspension_Coil.csv')
+
+# Create total summary
+total_summary <- summarize(sus_coil, Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+# Create Lot summary
+lot_summary <- summarize(group_by(sus_coil, Manufacturing_Lot), Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
