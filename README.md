@@ -8,12 +8,12 @@ However, with a significant intercept, the model leaves something to be desired,
 <br></br>
 
 ## Summary Statistics on Suspension Coils
-### Total PSI Summary Statistics
+### **Total PSI Summary Statistics**
 ![](./Resources/total_summary.png)
 
 <br>
 
-### PSI by Manufacturing Lot
+### **PSI by Manufacturing Lot**
 ![](./Resources/lot_summary.png)
 
 With design specifications dictating suspension coil variance be no greater than 100 pounds per square inch, the manufacturing data indicates that two of three lots are meeting this criteria. Lots One and Two are well below the maximum, as is the total variance for all three lots, but it could be much lower if Lot Three were not 70 pounds per square inch over the limit. <br></br>
@@ -21,21 +21,22 @@ Room for improvemnt in one lot, but so far so good everywhere else.
 <br></br>
 
 ## T-Tests on Suspension Coils
-### Hypotheses
-<font size=2>_For all 4 tests._</font><br></br>
+### **Hypotheses**
+<font size=2>_For all four tests._</font><br></br>
+**α = 0.05**<br></br>
 **H₀** - No statistical difference between the sample mean and the population mean.
 **Ha** - There is a statistical difference between the sample mean and the population mean. <br></br>
 
-### Lot 1 vs. Pop. Mean PSI (1500 lbs/sq. inch)
+### **Lot 1 vs. Pop. Mean PSI (1500 lbs/sq. inch)**
 ![](./Resources/lot1.png)
 **p-value** - 1 <br>
 **Significance Level** - Not significant <br></br>
-Lot 1 is perfect. Of the entire sample, the average coil fails to deviate from our 1500 lbs/sq. inch metric. It matches the population mean exactly, resulting in a p-value of 1, and making Lot 1 perfectly average. Nothing noteworthy here. <br></br>
+Lot 1 is perfect. Examining the entire sample, the average coil fails to deviate from our 1500 lbs/sq. inch metric. It matches the population mean exactly, resulting in a p-value of 1, and making Lot 1 perfectly average. Nothing noteworthy here. <br></br>
 
 **Conclusion** - Fail to reject the null hypothesis.
 <br></br>
 
-### Lot 2 vs. Pop. Mean (1500 lbs/sq. inch)
+### **Lot 2 vs. Pop. Mean (1500 lbs/sq. inch)**
 ![](./Resources/lot2.png)
 **p-value** - 0.61 <br>
 **Significance Level** - Not significant <br></br>
@@ -45,7 +46,7 @@ Not as perfect as Lot 1, but still enough to support the null hypothesis. With a
 **Conclusion** - Fail to reject the null hypothesis.
 <br></br>
 
-### Lot 3 vs. Pop. Mean (1500 lbs/sq. inch)
+### **Lot 3 vs. Pop. Mean (1500 lbs/sq. inch)**
 ![](./Resources/lot3.png)
 **p-value** - 0.04 <br>
 **Significance Level** - Moderate <br></br>
@@ -55,7 +56,7 @@ At a p-value of 0.04, Lot 3 provides the only evidence for the alternative hypot
 **Conclusion** - Reject the null hypothesis (at α = 0.05).
 <br></br>
 
-### All Lots vs Pop. Mean (1500 lbs/sq. inch)
+### **All Lots vs Pop. Mean (1500 lbs/sq. inch)**
 ![](./Resources/All-Lots.png)
 **p-value** - 0.06 <br>
 **Significance Level** - Low <br></br>
@@ -65,3 +66,32 @@ The third lot clearly drags down the mean in this test, and it's reflected in th
 
 **Conclusion** - Fail to reject the null hypothesis.
 <br></br>
+
+
+## Study Design: MechaCar vs. Competition
+### **The Question**
+Customers would likely be interested in a study that could show them where cost comes from for each vehicle. In other words, how do factors like fuel efficiency, safety rating, horse power, and year affect the cost of each vehicle?
+<br></br>
+
+### **Hypotheses**
+_Significance Level_<br>
+**α = 0.05**<br></br>
+**H₀** - Slope of linear model is zero, m = 0.<br>
+**Ha** - Slope of linear model is not zero m ≠ 0. 
+<br></br>
+
+### **Design and Data**
+I would run several multiple linear regressions for the MechaCar and for similar vehicles (probably three or four). Each regression would require data for each variable for each vehicle:<br>
+
+_Dependent Variable_:
+* Cost
+<br>
+
+_Independent Variables_:
+* City/Highway Fuel Efficiency
+* Safety Rating
+* Year
+<br></br>
+
+After acquiring this data for each vehicle, I would run a separate regression for each car, determining the impact the parameters have on total cost.<br></br>
+This would obviously require some tinkering, as it would be naïve to believe these three variables are responsible for the majority of the variance in cost among each type of vehicle tested. I would probably have to widen the list of independent variables and narrow down to the most impactful for each car. It would be time consuming to create, but very informative for consumers.
