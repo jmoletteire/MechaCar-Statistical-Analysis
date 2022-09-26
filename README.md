@@ -94,4 +94,4 @@ _Independent Variables_:
 <br></br>
 
 After acquiring this data for each vehicle, I would run a separate regression for each car, determining the impact the parameters have on total cost.<br></br>
-This would obviously require some tinkering, as it would be naïve to believe these three variables are responsible for the majority of the variance in cost among each type of vehicle tested. I would probably have to widen the list of independent variables and narrow down to the most impactful for each car. It would be time consuming to create, but very informative for consumers.
+This would obviously require tinkering, as it's naïve to believe these three variables are responsible for the majority of the variance in cost among each type of vehicle tested. I would probably have to widen the list of independent variables and narrow down to the most impactful for each car. It would be time consuming to create, but very informative for consumers.
