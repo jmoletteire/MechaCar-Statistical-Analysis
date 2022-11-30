@@ -81,7 +81,7 @@ _Significance Level_<br>
 <br></br>
 
 ### **Design and Data**
-I would run several multiple linear regressions, one for the MechaCar, and more for similar vehicles (probably three or four). Each regression would require data about each feature for each vehicle:<br>
+I would run several multiple linear regressions, one for the MechaCar, and others for similar vehicles (probably three or four). Each regression would require data about each feature for each vehicle:<br>
 
 _Dependent Variable_:
 * Cost
