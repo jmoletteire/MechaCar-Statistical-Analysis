@@ -60,8 +60,8 @@ At a p-value of 0.04, Lot 3 provides the only evidence for the alternative hypot
 ![](./Resources/All-Lots.png)
 **p-value** - 0.06 <br>
 **Significance Level** - Low <br></br>
-Examining all three lots combined requires some context, which is why we examined them individually first. With a p-value of 0.06 and a mean of 1498.78, the result for all three lots barely clears our threshold of 0.05, and deviates from our hypothesis by only a hair. It is somewhat significant, but let's consider everything we just saw. Lots 1 and 2 are nearly perfect, with each sample mean falling right at the population mean. Lot 3 is a bit of an outlier, with its results being relatively unlikely under the null hypothesis, but still not strong evidence to reject it. <br></br>
-The third lot clearly drags down the mean in this test, and it's reflected in the results, and a low significance level sounds about right for something caused by such an isolated issue. There is hardly enough evidence to refute the null hypothesis, so we fail to reject it.
+Examining a combination of all three lots requires context, which is why we examined them individually first. With a p-value of 0.06 and a mean of 1498.78, the result for all three lots barely clears our threshold of 0.05, and deviates from our hypothesis by just a hair. It is somewhat significant, but let's consider everything we have seen so far. Lots 1 and 2 are nearly perfect, with each sample mean approximately equal to the population mean. Lot 3 is a bit of an outlier, with its results relatively unlikely under the null hypothesis, but not strong enough evidence to reject it. <br></br>
+The third lot clearly drags down the mean in this test, and it is reflected in the results, and a low significance level sounds about right for something caused by such an isolated issue. With hardly enough evidence to refute the null hypothesis, we fail to reject it.
 <br></br>
 
 **Conclusion** - Fail to reject the null hypothesis.
@@ -81,7 +81,7 @@ _Significance Level_<br>
 <br></br>
 
 ### **Design and Data**
-I would run several multiple linear regressions for the MechaCar and for similar vehicles (probably three or four). Each regression would require data for each variable for each vehicle:<br>
+I would run several multiple linear regressions, one for the MechaCar, and more for similar vehicles (probably three or four). Each regression would require data about each feature for each vehicle:<br>
 
 _Dependent Variable_:
 * Cost
@@ -93,5 +93,5 @@ _Independent Variables_:
 * Year
 <br></br>
 
-After acquiring this data for each vehicle, I would run a separate regression for each car, determining the impact the parameters have on total cost.<br></br>
-This would obviously require tinkering, as it's naïve to believe these three variables are responsible for the majority of the variance in cost among each type of vehicle tested. I would probably have to widen the list of independent variables and narrow down to the most impactful for each car. It would be time consuming to create, but very informative for consumers.
+After acquiring this data for each vehicle, I would run separate regressions for each car, determining the impact the parameters have on total cost.<br></br>
+This would obviously require tinkering, as it is naïve to believe these three variables are responsible for the majority of the variance in total cost among each type of vehicle tested. I would probably have to widen the list of independent variables and narrow down to the most impactful for each car. It would be time consuming to create, but very informative for consumers.
