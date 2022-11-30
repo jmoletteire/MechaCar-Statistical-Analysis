@@ -24,8 +24,8 @@ Room for improvement in one lot, but so far so good everywhere else.
 ### **Hypotheses**
 <font size=2>_For all four tests._</font><br></br>
 **α = 0.05**<br></br>
-**H₀** - No statistical difference between the sample mean and the population mean.<br>
-**Ha** - There is a statistical difference between the sample mean and the population mean. <br></br>
+**H₀** - No statistically significant difference between the sample mean and the population mean.<br>
+**Ha** - There is a statistically significant difference between the sample mean and the population mean. <br></br>
 
 ### **Lot 1 vs. Pop. Mean PSI (1500 lbs/sq. inch)**
 ![](./Resources/lot1.png)
