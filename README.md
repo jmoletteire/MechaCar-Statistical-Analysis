@@ -50,7 +50,7 @@ Not as perfect as Lot 1, but still enough to support the null hypothesis. With a
 ![](./Resources/lot3.png)
 **p-value** - 0.04 <br>
 **Significance Level** - Moderate <br></br>
-At a p-value of 0.04, Lot 3 provides the only evidence for the alternative hypothesis. The moderately low probability of its results suggests its mean differs relatively significantly from the presumed population mean. We can see that this is true at the bottom of the image (mean of x: 1496.14). At a more precise significance level, this would be an issue, but at α = 0.05 we should just make note of it for now.
+At a p-value of 0.04, Lot 3 provides the only evidence for the alternative hypothesis. The moderately low probability of its results suggests its mean differs relatively significantly from the presumed population mean. We can see that this is true at the bottom of the image (mean of x: 1496.14). At a more precise significance level, this could be a major issue, but with α = 0.05 we can just make note of it for now.
 <br></br>
 
 **Conclusion** - Reject the null hypothesis (at α = 0.05).
